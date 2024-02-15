@@ -11,7 +11,9 @@ openai.api_key = st.secrets["api_secret"]
 def generate_response(prompt, temperature):
     try:
         completions = openai.ChatCompletion.create(
-            model="ft:gpt-3.5-turbo-0613:personal::8gVyTjRE",  # This should match the available chat models
+            model="ft:gpt-3.5-turbo-0613:personal::8sQDXUeK",  # This should match the available chat models
+            #fine tuned with MIMIC III (Self-formatted data)  : ft:gpt-3.5-turbo-0613:personal::8gVyTjRE
+            #fine tuned with MIMIC III (Hugging face)         : ft:gpt-3.5-turbo-0613:personal::8sQDXUeK
             messages=[{"role": "user", "content": prompt}],
             temperature=temperature
         )
