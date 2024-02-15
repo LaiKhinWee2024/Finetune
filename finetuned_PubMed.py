@@ -11,7 +11,7 @@ openai.api_key = st.secrets["api_secret"]
 def generate_response(prompt, temperature):
     try:
         completions = openai.ChatCompletion.create(
-            model="ftjob-1YWLMPSOKIQ26nYdmpeCzZxK",  # This should match the available chat models
+            model="ft:gpt-3.5-turbo-0613:personal::8gPrCzxV",  # This should match the available chat models
             #first fine tuned model with PubMed only
             messages=[{"role": "user", "content": prompt}],
             temperature=temperature
