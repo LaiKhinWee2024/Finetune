@@ -35,7 +35,7 @@ def main():
 
     # Map model option to actual model names
     model_map = {"Base model": "gpt-3.5-turbo-1106",
-                 "PubMed": "gpt-3.5-turbo-0125"}
+                 "PubMed": "ftjob-1YWLMPSOKIQ26nYdmpeCzZxK"}
     selected_model = model_map[model_option]
 
     # Display title
