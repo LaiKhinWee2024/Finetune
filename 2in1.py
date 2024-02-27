@@ -39,7 +39,7 @@ def main():
     selected_model = model_map[model_option]
 
     # Display title
-    st.title("GPT–EMR Chatbot")
+    st.title("GPT Chatbot")
 
     # Display prompt box
     def get_text():
